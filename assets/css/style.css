@@ -1,3 +1,67 @@
-.body {
-    width: 100vw;
+
+
+:root {
+    --main-bg-color: hsl(233, 47%, 7%);
+    --main-card-color: hsl(244, 38%, 16%);
+    --violet-accent-color: hsl(277, 64%, 61%);
+    --white-heading-color: hsl(0, 0%, 100%);
+    --white-trans-color: hsla(0, 0%, 100%, 0.75);
+    --white-trans-stat-colour: hsla(0, 0%, 100%, 0.6);
 }
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lexend', sans-serif;
+    font-size: 15px;
+    color: var(--white-trans-color);
+    font-weight: 400px;
+}
+
+.container{
+    margin: auto;
+    display: flex;
+    width: 100vw;
+    max-width: 1440px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-bg-color);
+}
+
+.card-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width:80%;
+    height:80%;
+    padding: 30px;
+    border-radius: 40px;
+}
+
+.hero-heading-text {
+    font-family:'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.3;
+    color: var(--white-heading-color);
+}
+.purple-accent {
+    color: var(--violet-accent-color);
+}
+.hero-card-info {
+    background-color: var(--main-card-color);
+    width:500px;
+    height:500px;
+}
+
+.hero-image {
+    width: 500px;
+    height: 500px;;
+}
+/* font-family: 'Inter', sans-serif; */
+/* font-family: 'Lexend', sans-serif; */
